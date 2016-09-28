@@ -1,0 +1,9 @@
+com.postmen.javasdk
+com.postmen.javasdk.config
+com.postmen.javasdk.examples
+com.postmen.javasdk.exception
+com.postmen.javasdk.handler
+com.postmen.javasdk.mockobject
+com.postmen.javasdk.model
+com.postmen.javasdk.service
+com.postmen.javasdk.util
