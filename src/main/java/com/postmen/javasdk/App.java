@@ -1,19 +1,6 @@
 package com.postmen.javasdk;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.print.attribute.HashAttributeSet;
-
-import com.postmen.javasdk.config.Config;
-import com.postmen.javasdk.config.ConfigBuilder;
-import com.postmen.javasdk.examples.CancelLabelExample;
-import com.postmen.javasdk.examples.LabelExample;
-import com.postmen.javasdk.examples.ManifestExample;
-import com.postmen.javasdk.examples.RateExample;
-import com.postmen.javasdk.examples.ShipperAccountExample;
-import com.postmen.javasdk.exception.ConfigException;
-import com.postmen.javasdk.service.LabelService;
+import com.postmen.javasdk.examples.AddressExample;
 
 /**
  * Hello world!
@@ -35,7 +22,7 @@ public class App
     	//ShipperAccountExample.getMap();
     	//ShipperAccountExample.getRaw();
     	
-    	LabelExample.create();
+//    	LabelExample.create();
     	//LabelExample.getWithId("884c0908-289b-4128-a496-c641295f5075");
     	// LabelExample.get();
     	
@@ -49,7 +36,9 @@ public class App
     	//CancelLabelExample.get();
     	// CancelLabelExample.getWithId("e66e2a1f-08ca-4564-b692-18343231056d");
     	
-    	ManifestExample.manifest();
+//    	ManifestExample.manifest();
+
+		AddressExample.create();
     }
     
 }
