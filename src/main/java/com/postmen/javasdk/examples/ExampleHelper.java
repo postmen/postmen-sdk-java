@@ -1,30 +1,22 @@
 package com.postmen.javasdk.examples;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.google.api.client.http.HttpTransport;
+import com.google.gson.Gson;
+import com.postmen.javasdk.model.*;
+
 import java.util.logging.Handler;
 import java.util.logging.Level;
 import java.util.logging.LogRecord;
 import java.util.logging.Logger;
 
-import com.google.api.client.http.HttpTransport;
-import com.google.gson.Gson;
-import com.postmen.javasdk.model.Address;
-import com.postmen.javasdk.model.Customs;
-import com.postmen.javasdk.model.Dimension;
-import com.postmen.javasdk.model.Item;
-import com.postmen.javasdk.model.LabelRequest;
-import com.postmen.javasdk.model.Money;
-import com.postmen.javasdk.model.Parcel;
-import com.postmen.javasdk.model.Shipment;
-import com.postmen.javasdk.model.ShipperAccount;
-import com.postmen.javasdk.model.Weight;
-
 public class ExampleHelper {
 	
 	private static Gson gson = new Gson();
-	private static String apiKey = "5c0a9482-930f-49d8-a319-ea3d24081ad2";
-	private static String shipperAccount = "43a07e41-20af-423f-809a-d8951af8de53";
+	/**
+	 *  You can get API Key and shipper Account from https://secure.postmen.com/
+	 */
+	private static String apiKey = "Your API Key";
+	private static String shipperAccount = "Your shipperAccount";
 	
 	public static void printObject(Object object){
 		String json = gson.toJson(object);

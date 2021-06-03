@@ -9,7 +9,6 @@ import com.postmen.javasdk.examples.AddressExample;
 public class App 
 {
 	// personal API key in test
-	// private static final String apiKey = "8552df2f-66dc-4585-a02e-9dc7cba7a45f";
 	// master API Key for dev
     public static void main( String[] args ) {
     	// System.setProperty(org.slf4j.impl.SimpleLogger.DEFAULT_LOG_LEVEL_KEY, "debug");
