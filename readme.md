@@ -101,7 +101,7 @@ config.setProxy("some.proxy.com");
 service.reInitialize();
 ```
 ### Service Classes
-Instantiate a specific Service Class that will help you process Label, Rate, Manifest, or Cancel Label
+Instantiate a specific Service Class that will help you process Label, Rate, Manifest, Cancel Label or Address
 
 | Transaction Type          | Service Class      |
 |---------------------------|--------------------|
@@ -109,10 +109,11 @@ Instantiate a specific Service Class that will help you process Label, Rate, Man
 | Rate Transactions         | RateService        |
 | Manifest Transactions     | ManifestService    |
 | Cancel Label Transactions | CancelLabelService |
+| Address Transactions      | AddressService     |
 
 
 ### service.create(Request Object);
-Creates either a label, rate, manifest, or cancel label depending on the instantiate service class
+Creates either a label, rate, manifest, cancel label or address validation depending on the instantiate service class
 
 ### service.get();
 Gets a List of objects you have
@@ -163,6 +164,7 @@ There are 4 main Request Objects:
 2. RateRequest
 3. ManifestRequest
 4. CancelLabelRequest
+5. AddressRequest
 
 Creating a Label example:
 ``` Java
@@ -237,6 +239,7 @@ There are also 4 types of Response Objects
 2. RateResponse
 3. ManifestResponse
 4. CancelLabelResponse
+5. AddressResponse
 
 ``` Java
 LabelResponse response = labelService.create(req);
@@ -288,7 +291,7 @@ Available method for PostmenException:
 
 
 ## Examples
-There are 4 example class in com.postmen.javasdk. To run, simple choose an operation and provide your API KEY.
+There are 5 example class in com.postmen.javasdk. To run, simple choose an operation and provide your API KEY.
 
 Change the API key in `CredentialHelper`
 
@@ -302,6 +305,7 @@ Change the API key in `CredentialHelper`
 | ManifestExample.get()       | manifests object(s) retrieve     |
 | CancelLabelExample.create() | cancel-labels object creation    |
 | CancelLabelExample.get()    | cancel-labels object(s) retrieve |
+| AddressExample.create()     | address validation               |
 
 ## Testing
 if you want to contribute to the SDK, run the automated unit test before making a pull request.
@@ -312,3 +316,4 @@ Released under the MIT license. See the LICENSE file for details.
 
 ## Contributors
 - Heinrich Chan -
+- Kyle Yang -
