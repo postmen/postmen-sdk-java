@@ -1,8 +1,8 @@
 package com.postmen.javasdk.model;
 
-import java.util.List;
-
 import com.google.api.client.util.Key;
+
+import java.util.List;
 
 public class RateInfo {
 	
@@ -19,7 +19,7 @@ public class RateInfo {
 	@Key("delivery_date")
 	private String deliveryDate;
 	@Key("transit_time")
-	private String transitTime;
+	private Integer transitTime;
 	@Key("error_message")
 	private String errorMessage;
 	@Key("info_message")
@@ -67,10 +67,10 @@ public class RateInfo {
 	public void setDeliveryDate(String deliveryDate) {
 		this.deliveryDate = deliveryDate;
 	}
-	public String getTransitTime() {
+	public Integer getTransitTime() {
 		return transitTime;
 	}
-	public void setTransitTime(String transitTime) {
+	public void setTransitTime(Integer transitTime) {
 		this.transitTime = transitTime;
 	}
 	public String getErrorMessage() {
