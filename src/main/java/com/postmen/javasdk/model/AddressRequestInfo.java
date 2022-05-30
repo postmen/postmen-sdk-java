@@ -14,6 +14,10 @@ public class AddressRequestInfo {
     @Key
     private String street1;
     @Key
+    private String street2;
+    @Key
+    private String street3;
+    @Key
     private String city;
     @Key
     private String state;
@@ -92,5 +96,21 @@ public class AddressRequestInfo {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public String getStreet2() {
+        return street2;
+    }
+
+    public void setStreet2(String street2) {
+        this.street2 = street2;
+    }
+
+    public String getStreet3() {
+        return street3;
+    }
+
+    public void setStreet3(String street3) {
+        this.street3 = street3;
     }
 }
