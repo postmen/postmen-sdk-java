@@ -4,7 +4,7 @@ import com.google.api.client.util.Key;
 
 public class Money {
 	@Key
-	private int amount;
+	private double amount;
 	@Key
 	private String currency;
 	
@@ -12,12 +12,12 @@ public class Money {
 		
 	}
 	
-	public Money(int amount, String currency) {
+	public Money(double amount, String currency) {
 		this.amount = amount;
 		this.currency = currency;
 	}
 	
-	public int getAmount() {
+	public double getAmount() {
 		return amount;
 	}
 	public void setAmount(int amount) {

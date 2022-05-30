@@ -51,7 +51,7 @@ public class ExampleHelper {
 		item.setOriginCountry("USA");
 		item.setQuantity(2);
 		
-		item.setPrice(new Money(50, "USD"));
+		item.setPrice(new Money(50.1, "USD"));
 		
 		item.setWeight(new Weight(0.6, "kg"));
 		item.setSku("Epic_Food_Bar");
